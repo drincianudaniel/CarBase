@@ -37,6 +37,7 @@ public class LoginWindow extends JFrame {
 	JLabel errorLabel = new JLabel("");
 	private JLabel lblNewLabel_1;
 	private JLabel lblNewLabel_2;
+	private JLabel lblNewLabel_3;
 
 	/**
 	 * Launch the application.
@@ -112,7 +113,7 @@ public class LoginWindow extends JFrame {
 		contentPane.add(Login_btn);
 		
 		
-		errorLabel.setBounds(46, 220, 168, 14);
+		errorLabel.setBounds(36, 215, 189, 14);
 		contentPane.add(errorLabel);
 		
 		lblNewLabel_1 = new JLabel("Click to create one!");
@@ -137,6 +138,18 @@ public class LoginWindow extends JFrame {
 		carbaselbl.setIcon(image);
 		carbaselbl.setBounds(81, -14, 106, 62);
 		contentPane.add(carbaselbl);
+		
+		ImageIcon image2 = new ImageIcon(getImage("/user.png"));
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(image2);
+		lblNewLabel.setBounds(10, 100, 25, 28);
+		contentPane.add(lblNewLabel);
+		
+		ImageIcon image3 = new ImageIcon(getImage("/lock.png"));
+		lblNewLabel_3 = new JLabel("");
+		lblNewLabel_3.setIcon(image3);
+		lblNewLabel_3.setBounds(12, 142, 22, 28);
+		contentPane.add(lblNewLabel_3);
 	}
 	
 	private void Login_btnActionPerformed(ActionEvent evt)
