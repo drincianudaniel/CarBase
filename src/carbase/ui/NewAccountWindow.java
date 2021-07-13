@@ -26,6 +26,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
 import java.awt.SystemColor;
 import javax.swing.SwingConstants;
+import java.awt.Toolkit;
 
 public class NewAccountWindow extends JFrame {
 
@@ -56,6 +57,7 @@ public class NewAccountWindow extends JFrame {
 	 * Create the frame.
 	 */
 	public NewAccountWindow() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("resources\\carbase.png"));
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 214, 260);

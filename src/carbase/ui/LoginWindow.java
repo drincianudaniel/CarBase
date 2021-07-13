@@ -27,6 +27,7 @@ import java.awt.event.FocusEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
+import java.awt.Toolkit;
 
 public class LoginWindow extends JFrame {
 
@@ -38,7 +39,6 @@ public class LoginWindow extends JFrame {
 	private JLabel lblNewLabel_1;
 	private JLabel lblNewLabel_2;
 	private JLabel lblNewLabel_3;
-
 	/**
 	 * Launch the application.
 	 */
@@ -47,6 +47,7 @@ public class LoginWindow extends JFrame {
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
+				
 				try {
 					LoginWindow frame = new LoginWindow();
 					frame.setVisible(true);
@@ -61,6 +62,9 @@ public class LoginWindow extends JFrame {
 	 * Create the frame.
 	 */
 	public LoginWindow() {
+	
+		setIconImage(Toolkit.getDefaultToolkit().getImage("resources\\carbase.png"));
+		setBackground(Color.WHITE);
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 277, 274);
@@ -136,7 +140,7 @@ public class LoginWindow extends JFrame {
 		ImageIcon image = new ImageIcon(getImage("/carbase.png"));
 		JLabel carbaselbl = new JLabel("");
 		carbaselbl.setIcon(image);
-		carbaselbl.setBounds(81, -14, 106, 62);
+		carbaselbl.setBounds(80, -17, 106, 72);
 		contentPane.add(carbaselbl);
 		
 		ImageIcon image2 = new ImageIcon(getImage("/user.png"));

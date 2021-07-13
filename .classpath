@@ -9,5 +9,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="D:/mysql/mysql-connector-java-8.0.23/mysql-connector-java-8.0.23.jar"/>
 	<classpathentry kind="lib" path="F:/facultadanisem2an2/OOD/CarBase/resources"/>
+	<classpathentry kind="lib" path="D:/mysql/rs2xml.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
